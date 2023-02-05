@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.27" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Teste Escrita</title>
+		<script src="js.js"></script>
+		<link rel="stylesheet" type="text/css" href="css.css">
+</head>	
+	<body>
+		<span class="msg">Digite a palavra a seguir:</span>
+		<span class="palavra" id="palavra">CASA</span>
+		
+		<br/><br/>
+		
+		<input type="text" maxlength="50" 
+			   class="digitar"
+			   onkeyup="teste(this.value)"
+			   id="input" name="input" />
+			   
+		<br/><br/>
+		
+		<span class="temporizador" id="temporizador">Tempo: </span>
+		<span class="temporizadorNR" id="temporizadorNR">100</span>
+		
+		<br/>
+		
+		<span class="contador" id="contador">Acertos: </span>
+		<span class="contadorNR" id="contadorNR">00</span>
+		
+		<br/><br/>
+		
+		<input id="reiniciar" type="button" value="reiniciar" 
+			   style="display: none"
+			   onclick="reiniciar();" font-size: 100px; />
+	</body>
+</html>

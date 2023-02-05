@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.27" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Jogos TMT (treinamento de mouse e teclado)</title>
+	<link rel="stylesheet" type="text/css" href="#" />
+</head>
+<body>
+
+<script>
+document.onkeydown = function(event) {
+	var key_press = String.fromCharCode(event.keyCode);
+	var key_code = event.keyCode;
+	//document.getElementById('kp').innerHTML = key_press;
+    //document.getElementById('kc').innerHTML = key_code;
+	var status = document.getElementById('status');
+	status.innerHTML = "DOWN Event Fired For : "+key_press;
+	if(key_press == "1"){
+		window.location = "http://localhost/jogos/jogo7.html";
+
+	} else if(key_press == "2") {
+		window.location = "http://localhost/jogos/intro1.html";
+
+	} else if(key_press == "3") {
+		window.location = "http://localhost/jogos/jogo2.html";
+	} else { alert("Digite um número válido.");}
+}
+document.onkeyup = function(event){
+    var key_press = String.fromCharCode(event.keyCode);
+	var status = document.getElementById('status');
+	
+}
+</script>
+<span id="kp"></span>
+<span id="kc"></span>
+<p id="status"></p>
+
+<img src="img/escolha/EscolhaJogo1v2.png" alt="Imagem de escolha de jogos" width="800" height="600" />
+
+</body>
+</html>
