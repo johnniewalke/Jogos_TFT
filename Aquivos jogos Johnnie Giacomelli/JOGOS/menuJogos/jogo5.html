@@ -10,46 +10,42 @@
 	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body style ="border: 0px; margin:0px; padding: 0px; background-color: black;">
+	<img src="img/escolha/EscolhaJogo5v3.png" alt="Imagem de escolha de jogos" width="800" height="600" />
+	
+	<script>
+	document.onkeydown = function(event) {
+		var key_press = String.fromCharCode(event.keyCode);
+		var key_code = event.keyCode;
 
-<script>
-document.onkeydown = function(event) {
-	var key_press = String.fromCharCode(event.keyCode);
-	var key_code = event.keyCode;
+		if(key_press == "1" || key_press == "a"){
+			window.location = "./jogo4.html";
 
-	if(key_press == "1" || key_press == "a"){
-		window.location = "http://www.jogostmt.com.br/jogos/menuJogos/jogo4.html";
+		} else if(key_press == "2" || key_press == "b") {
+			window.location = "./jogo5/intro5/intro5.html";
 
-	} else if(key_press == "2" || key_press == "b") {
-		window.location = "http://www.jogostmt.com.br/jogos/menuJogos/jogo5/intro5/intro5.html";
-
-	} else if(key_press == "3" || key_press == "c") {
-		window.location = "http://www.jogostmt.com.br/jogos/menuJogos/jogo6.html";
-		
-	}  else if(key_press == "4" || key_press == "d") {
-		window.location = "http://www.jogostmt.com.br/jogos/menuInicial/contatos";
-	} //else { alert("Digite um número válido.");} 
-}
-
-</script>
-
-<img src="img/escolha/EscolhaJogo5v3.png" alt="Imagem de escolha de jogos" width="800" height="600" />
+		} else if(key_press == "3" || key_press == "c") {
+			window.location = "./jogo6.html";
+			
+		}  else if(key_press == "4" || key_press == "d") {
+			window.location = "../contatos/.index.html";
+		} //else { alert("Digite um número válido.");} 
+	}
+	</script>
 
 	<table width="211" height="74" border="0" align="center" cellpadding="0" cellspacing="0"
-	 class="botao1" onclick="location.href='http://www.jogostmt.com.br/jogos/menuJogos/jogo4.html' ">
-</table>
+	 class="botao1" onclick="location.href='./jogo4.html' ">
+	</table>
 
 	<table width="211" height="74" border="0" align="center" cellpadding="0" cellspacing="0" 
-	class="botao2" onclick="location.href='http://www.jogostmt.com.br/jogos/menuJogos/jogo5/intro5/intro5.html' ">
-</table>
+	class="botao2" onclick="location.href='./jogo5/intro5/intro5.html' ">
+	</table>
 
 	<table width="211" height="74" border="0" align="center" cellpadding="0" cellspacing="0" 
-	class="botao3" onclick="location.href='http://www.jogostmt.com.br/jogos/menuJogos/jogo6.html' ">
-</table>
+	class="botao3" onclick="location.href='./jogo6.html' ">
+	</table>
 
 	<table width="106" height="37" border="0" align="center" cellpadding="0" cellspacing="0" 
-	class="botao4" onclick="location.href='http://www.jogostmt.com.br/jogos/menuInicial/contatos' ">
-</table>
-
-
+	class="botao4" onclick="location.href='../contatos/.index.html' ">
+	</table>
 </body>
 </html>

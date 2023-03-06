@@ -12,31 +12,27 @@
 <body style ="border: 0px; margin:0px; padding: 0px; background-color: black;">
 	<img src="img/fundoInicio.png" alt="Imagem de fundo de menu" width="800" height="600" />
 
-	<table width="211" height="74" border="0" align="center" cellpadding="0" cellspacing="0"
-	 class="botao1" onclick="location.href='./contatos/index.html' ">
-	</table>
-
-		<table width="211" height="74" border="0" align="center" cellpadding="0" cellspacing="0" 
-		class="botao2" onclick="location.href='./menuJogos/index.html' ">
-		<tr>
-			<a href="#"><td>&nbsp;</td></a>
-		</tr>
-		</table>
-
 	<script>
 	document.onkeydown = function(event) {
 		var key_press = String.fromCharCode(event.keyCode);
 		var key_code = event.keyCode;
 
 		if(key_press == "1" || key_press == "a"){
-			window.location = "./menuInicial/contatos/index.html";
+			window.location = "../contatos/index.html";
 
 		} else if(key_press == "2" || key_press == "b") {
-			window.location = "./menuJogos/index.html";
+			window.location = "../index.html";
 		}
 	}
-
 	</script>
 
+	<table width="211" height="74" border="0" align="center" cellpadding="0" cellspacing="0" class="botao1" onclick="location.href='./contatos/index.html' ">
+	</table>
+
+	<table width="211" height="74" border="0" align="center" cellpadding="0" cellspacing="0" class="botao2" onclick="location.href='./menuJogos/index.html' ">
+		<tr>
+			<a href="#"><td>&nbsp;</td></a>
+		</tr>
+	</table>
 </body>
 </html>
